@@ -70,13 +70,13 @@ const enableValidation = (validationConfig) => {
 }
 
 //ФУНКЦИЯ КОТОРАЯ ОЧИЩАЕТ ОШИБКИ ВАЛИДАЦИИ ФОРМЫ И ДЕЛАЕТ КНОПКУ НЕ АКТИВНОЙ
-const clearValidation = (profileForm, validationConfig) => {
-    const buttonElement= profileForm.querySelector(validationConfig.submitButtonSelector);
-    buttonElement.disabled = true;
-    buttonElement.classList.add(validationConfig.inactiveButtonClass);
-    const inputElements = Array.from(profileForm.querySelectorAll(validationConfig.inputSelector));
+const clearValidation = (formElement, validationConfig) => {
+    const inputList = Array.from(formElement.querySelectorAll(validationConfig.inputSelector));
+    const buttonElement = formElement.querySelector(validationConfig.submitButtonSelector);
+    toggleButtonState(inputList, buttonElement, validationConfig);
+    const inputElements = Array.from(formElement.querySelectorAll(validationConfig.inputSelector));
     inputElements.forEach((inputElement) => {
-        hideInputError(profileForm, inputElement, validationConfig)
+        hideInputError(formElement, inputElement, validationConfig)
     }) 
 }
 
