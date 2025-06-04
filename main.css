@@ -161,7 +161,7 @@
 /*!***************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__error/popup__error_visible.css ***!
   \***************************************************************************************************************************************************************************/
-.popup__error_visible{color:red;font-size:12px;inset-block-start:145px;inset-inline-start:36px;position:absolute;visibility:visible}
+.popup__error_visible{color:red;font-size:12px;inset-block-start:145px;inset-inline-start:36px;position:absolute;visibility:visible}.popup__error_visible:nth-of-type(2){inset-block-start:200px}
 /*!******************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__button/popup__button_disabled.css ***!
   \******************************************************************************************************************************************************************************/
