@@ -38,9 +38,9 @@
       <h3 class="popup__title">Редактировать профиль</h3>
       <form class="popup__form" name="edit-profile" novalidate>
         <input type="text" name="name" id="editNameInput" class="popup__input popup__input_type_name" placeholder="Имя" minlength="2" maxlength="40" pattern="^[a-zA-Zа-яА-Я\s\-]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required>
-        <span class="popup__error_invisible editNameInput-error"></span>
+        <span class="editNameInput-error"></span>
         <input type="text" name="description" id="editDescriptionInput" class="popup__input popup__input_type_description" placeholder="Занятие" minlength="2" maxlength="200" pattern="^[a-zA-Zа-яА-Я\s\-]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required>
-        <span class="popup__error_invisible editDescriptionInput-error"></span>
+        <span class="editDescriptionInput-error"></span>
         <button type="submit" class="button popup__button">Сохранить</button>
       </form>
     </div>
@@ -51,9 +51,9 @@
       <h3 class="popup__title">Новое место</h3>
       <form class="popup__form" name="new-place" novalidate>
         <input type="text" name="place-name" id="cardNameInput" class="popup__input popup__input_type_card-name" placeholder="Название" minlength="2" maxlength="30" pattern="^[a-zA-Zа-яА-Я\s\-]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required>
-        <span class="popup__error_invisible cardNameInput-error"></span>
+        <span class="cardNameInput-error"></span>
         <input type="url" name="cardLink" id="cardLinkInput" class="popup__input popup__input_type_url" placeholder="Ссылка на картинку" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required>
-        <span class="popup__error_invisible cardLinkInput-error"></span>
+        <span class="cardLinkInput-error"></span>
         <button type="submit" class="button popup__button">Сохранить</button>
       </form>
     </div>
